@@ -1,12 +1,12 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
-use romanzipp\DTO\Cases\CamelCase;
-use romanzipp\DTO\Cases\KebabCase;
-use romanzipp\DTO\Cases\PascalCase;
-use romanzipp\DTO\Cases\SnakeCase;
-use romanzipp\DTO\Tests\Support\NestedData;
+use bss-php\DTO\Cases\CamelCase;
+use bss-php\DTO\Cases\KebabCase;
+use bss-php\DTO\Cases\PascalCase;
+use bss-php\DTO\Cases\SnakeCase;
+use bss-php\DTO\Tests\Support\NestedData;
 
 class NestedDataValuesTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\DTO\Tests\Support\Classes;
+namespace bss-php\DTO\Tests\Support\Classes;
 
 interface TestInterface
 {

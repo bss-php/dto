@@ -1,17 +1,17 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
-use romanzipp\DTO\AbstractData;
-use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\DTO\Tests\Support\SimpleData;
-use romanzipp\DTO\Tests\Support\SimpleDataNullable;
-use romanzipp\DTO\Tests\Support\SimpleDataNullableDefaultNull;
-use romanzipp\DTO\Tests\Support\SimpleDataNullableRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeHinted;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeHintedRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeUnion;
+use bss-php\DTO\AbstractData;
+use bss-php\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\Tests\Support\SimpleData;
+use bss-php\DTO\Tests\Support\SimpleDataNullable;
+use bss-php\DTO\Tests\Support\SimpleDataNullableDefaultNull;
+use bss-php\DTO\Tests\Support\SimpleDataNullableRequired;
+use bss-php\DTO\Tests\Support\SimpleDataRequired;
+use bss-php\DTO\Tests\Support\SimpleDataTypeHinted;
+use bss-php\DTO\Tests\Support\SimpleDataTypeHintedRequired;
+use bss-php\DTO\Tests\Support\SimpleDataTypeUnion;
 
 class ValuesTest extends TestCase
 {

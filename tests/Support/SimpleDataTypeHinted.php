@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\DTO\Tests\Support;
+namespace bss-php\DTO\Tests\Support;
 
-use romanzipp\DTO\AbstractData;
+use bss-php\DTO\AbstractData;
 
 class SimpleDataTypeHinted extends AbstractData
 {

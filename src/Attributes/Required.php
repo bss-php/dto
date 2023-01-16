@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\DTO\Attributes;
+namespace bss-php\DTO\Attributes;
 
 use Attribute;
 

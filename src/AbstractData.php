@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace romanzipp\DTO;
+namespace bss-php\DTO;
 
-use romanzipp\DTO\Attributes\Flexible;
-use romanzipp\DTO\Cases\AbstractCase;
-use romanzipp\DTO\Cases\SnakeCase;
-use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\DTO\Exceptions\InvalidDeclarationException;
-use romanzipp\DTO\Interfaces\AbstractDataInterface;
-use romanzipp\DTO\Values\MissingValue;
+use bss-php\DTO\Attributes\Flexible;
+use bss-php\DTO\Cases\AbstractCase;
+use bss-php\DTO\Cases\SnakeCase;
+use bss-php\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\Exceptions\InvalidDeclarationException;
+use bss-php\DTO\Interfaces\AbstractDataInterface;
+use bss-php\DTO\Values\MissingValue;
 
 abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
 {
@@ -95,7 +95,7 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
      *
      * @param string $key
      *
-     * @return \romanzipp\DTO\Property
+     * @return \bss-php\DTO\Property
      */
     private function getProperty(string $key): Property
     {
@@ -171,7 +171,7 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
             throw new \InvalidArgumentException("The given case formatter `{$case}` is invalid");
         }
 
-        /** @var \romanzipp\DTO\Cases\AbstractCase $caseFormatter */
+        /** @var \bss-php\DTO\Cases\AbstractCase $caseFormatter */
         $caseFormatter = new $case($values);
 
         return $caseFormatter->format();

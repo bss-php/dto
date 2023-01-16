@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
-use romanzipp\DTO\AbstractData;
+use bss-php\DTO\AbstractData;
 
 class ToJsonTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use romanzipp\DTO\Property;
+use bss-php\DTO\Property;
 
 abstract class TestCase extends BaseTestCase
 {

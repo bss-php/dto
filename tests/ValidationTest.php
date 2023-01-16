@@ -1,25 +1,25 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
-use romanzipp\DTO\AbstractData;
-use romanzipp\DTO\Attributes\Required;
-use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\DTO\Exceptions\InvalidDeclarationException;
-use romanzipp\DTO\Property;
-use romanzipp\DTO\Tests\Support\SimpleData;
-use romanzipp\DTO\Tests\Support\SimpleDataNullable;
-use romanzipp\DTO\Tests\Support\SimpleDataNullableDefaultNull;
-use romanzipp\DTO\Tests\Support\SimpleDataNullableDefaultNullRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataNullableRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeHinted;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeHintedRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeUnion;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeUnionNullable;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeUnionNullableRequired;
-use romanzipp\DTO\Tests\Support\SimpleDataTypeUnionRequired;
-use romanzipp\DTO\Values\MissingValue;
+use bss-php\DTO\AbstractData;
+use bss-php\DTO\Attributes\Required;
+use bss-php\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\Exceptions\InvalidDeclarationException;
+use bss-php\DTO\Property;
+use bss-php\DTO\Tests\Support\SimpleData;
+use bss-php\DTO\Tests\Support\SimpleDataNullable;
+use bss-php\DTO\Tests\Support\SimpleDataNullableDefaultNull;
+use bss-php\DTO\Tests\Support\SimpleDataNullableDefaultNullRequired;
+use bss-php\DTO\Tests\Support\SimpleDataNullableRequired;
+use bss-php\DTO\Tests\Support\SimpleDataRequired;
+use bss-php\DTO\Tests\Support\SimpleDataTypeHinted;
+use bss-php\DTO\Tests\Support\SimpleDataTypeHintedRequired;
+use bss-php\DTO\Tests\Support\SimpleDataTypeUnion;
+use bss-php\DTO\Tests\Support\SimpleDataTypeUnionNullable;
+use bss-php\DTO\Tests\Support\SimpleDataTypeUnionNullableRequired;
+use bss-php\DTO\Tests\Support\SimpleDataTypeUnionRequired;
+use bss-php\DTO\Values\MissingValue;
 
 class ValidationTest extends TestCase
 {

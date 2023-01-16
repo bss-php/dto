@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\DTO\Tests\Support;
+namespace bss-php\DTO\Tests\Support;
 
-use romanzipp\DTO\AbstractData;
-use romanzipp\DTO\Attributes\Required;
+use bss-php\DTO\AbstractData;
+use bss-php\DTO\Attributes\Required;
 
 class SimpleDataNullableDefaultNullRequired extends AbstractData
 {

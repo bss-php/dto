@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace romanzipp\DTO\Values;
+namespace bss-php\DTO\Values;
 
 class MissingValue
 {

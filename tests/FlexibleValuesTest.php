@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\DTO\Tests;
+namespace bss-php\DTO\Tests;
 
-use romanzipp\DTO\AbstractData;
-use romanzipp\DTO\Attributes\Flexible;
-use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\DTO\Tests\Support\FlexibleData;
+use bss-php\DTO\AbstractData;
+use bss-php\DTO\Attributes\Flexible;
+use bss-php\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\Tests\Support\FlexibleData;
 
 class FlexibleValuesTest extends TestCase
 {

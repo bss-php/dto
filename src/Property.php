@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace romanzipp\DTO;
+namespace bss-php\DTO;
 
 use ReflectionException;
-use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\DTO\Values\MissingValue;
+use bss-php\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\Values\MissingValue;
 
 final class Property
 {
@@ -27,7 +27,7 @@ final class Property
     private bool $hasDefaultValue;
 
     /**
-     * @var \romanzipp\DTO\Types\Type[]
+     * @var \bss-php\DTO\Types\Type[]
      */
     public array $allowedTypes;
 
@@ -54,7 +54,7 @@ final class Property
      * Create a new class instance.
      *
      * @param \ReflectionProperty $reflectionProperty
-     * @param \romanzipp\DTO\AbstractData $data
+     * @param \bss-php\DTO\AbstractData $data
      *
      * @return static
      */
@@ -67,9 +67,9 @@ final class Property
      * Collect all properties form a given class and optional instance.
      *
      * @param string $class
-     * @param \romanzipp\DTO\AbstractData|null $data
+     * @param \bss-php\DTO\AbstractData|null $data
      *
-     * @return \romanzipp\DTO\Property[]
+     * @return \bss-php\DTO\Property[]
      */
     public static function collect(string $class, ?AbstractData $data = null): array
     {
@@ -96,7 +96,7 @@ final class Property
      * Create an instance from a given data instance and property key.
      *
      * @param string $key
-     * @param \romanzipp\DTO\AbstractData $data
+     * @param \bss-php\DTO\AbstractData $data
      *
      * @return $this
      */
@@ -106,9 +106,9 @@ final class Property
     }
 
     /**
-     * @param \romanzipp\DTO\AbstractData $data
+     * @param \bss-php\DTO\AbstractData $data
      *
-     * @return \romanzipp\DTO\Property[]
+     * @return \bss-php\DTO\Property[]
      */
     public static function collectFromInstance(AbstractData $data): array
     {
@@ -121,7 +121,7 @@ final class Property
     /**
      * @param string $class
      *
-     * @return \romanzipp\DTO\Property[]
+     * @return \bss-php\DTO\Property[]
      */
     public static function collectFromClass(string $class): array
     {
@@ -145,7 +145,7 @@ final class Property
      *
      * @param mixed $value
      *
-     * @return \romanzipp\DTO\Exceptions\InvalidDataException|null
+     * @return \bss-php\DTO\Exceptions\InvalidDataException|null
      */
     public function getError(mixed $value): ?InvalidDataException
     {
@@ -273,7 +273,7 @@ final class Property
      * Check if a property has been initialized with a value.
      * This also returns true if a property has been declared with a default value.
      *
-     * @param \romanzipp\DTO\AbstractData $data
+     * @param \bss-php\DTO\AbstractData $data
      *
      * @return bool
      */
@@ -309,7 +309,7 @@ final class Property
     /**
      * Get all allowed types.
      *
-     * @return \romanzipp\DTO\Types\Type[]
+     * @return \bss-php\DTO\Types\Type[]
      */
     private function checkAllowedTypes(): array
     {

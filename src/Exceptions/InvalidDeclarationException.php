@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace romanzipp\DTO\Exceptions;
+namespace bss-php\DTO\Exceptions;
 
-use romanzipp\DTO\Property;
+use bss-php\DTO\Property;
 
 class InvalidDeclarationException extends \RuntimeException
 {

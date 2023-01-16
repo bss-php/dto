@@ -1,11 +1,11 @@
 {
-    "name": "romanzipp/dto",
+    "name": "bss-php/dto",
     "description": "A strongly typed Data Transfer Object without magic for PHP 7.4+",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "romanzipp",
+            "name": "bss-php",
             "email": "ich@ich.wtf",
             "homepage": "https://ich.wtf"
         }
@@ -18,17 +18,17 @@
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^0.12.99|^1.0",
         "phpunit/phpunit": "^9.0",
-        "romanzipp/php-cs-fixer-config": "^3.0",
+        "bss-php/php-cs-fixer-config": "^3.0",
         "symfony/var-dumper": "^5.1"
     },
     "autoload": {
         "psr-4": {
-            "romanzipp\\DTO\\": "src"
+            "bss-php\\DTO\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "romanzipp\\DTO\\Tests\\": "tests"
+            "bss-php\\DTO\\Tests\\": "tests"
         }
     },
     "scripts": {
