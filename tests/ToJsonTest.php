@@ -1,8 +1,8 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\AbstractData;
+use bssphp\dto\AbstractData;
 
 class ToJsonTest extends TestCase
 {

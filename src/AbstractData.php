@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace bss-php\dto;
+namespace bssphp\dto;
 
-use bss-php\dto\Attributes\Flexible;
-use bss-php\dto\Cases\AbstractCase;
-use bss-php\dto\Cases\SnakeCase;
-use bss-php\dto\Exceptions\InvalidDataException;
-use bss-php\dto\Exceptions\InvalidDeclarationException;
-use bss-php\dto\Interfaces\AbstractDataInterface;
-use bss-php\dto\Values\MissingValue;
+use bssphp\dto\Attributes\Flexible;
+use bssphp\dto\Cases\AbstractCase;
+use bssphp\dto\Cases\SnakeCase;
+use bssphp\dto\Exceptions\InvalidDataException;
+use bssphp\dto\Exceptions\InvalidDeclarationException;
+use bssphp\dto\Interfaces\AbstractDataInterface;
+use bssphp\dto\Values\MissingValue;
 
 abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
 {
@@ -95,7 +95,7 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
      *
      * @param string $key
      *
-     * @return \bss-php\dto\Property
+     * @return \bssphp\dto\Property
      */
     private function getProperty(string $key): Property
     {
@@ -171,7 +171,7 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
             throw new \InvalidArgumentException("The given case formatter `{$case}` is invalid");
         }
 
-        /** @var \bss-php\dto\Cases\AbstractCase $caseFormatter */
+        /** @var \bssphp\dto\Cases\AbstractCase $caseFormatter */
         $caseFormatter = new $case($values);
 
         return $caseFormatter->format();

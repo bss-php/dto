@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace bss-php\dto\Cases;
+namespace bssphp\dto\Cases;
 
 abstract class AbstractCase
 {

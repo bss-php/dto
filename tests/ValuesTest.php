@@ -1,17 +1,17 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\AbstractData;
-use bss-php\dto\Exceptions\InvalidDataException;
-use bss-php\dto\Tests\Support\SimpleData;
-use bss-php\dto\Tests\Support\SimpleDataNullable;
-use bss-php\dto\Tests\Support\SimpleDataNullableDefaultNull;
-use bss-php\dto\Tests\Support\SimpleDataNullableRequired;
-use bss-php\dto\Tests\Support\SimpleDataRequired;
-use bss-php\dto\Tests\Support\SimpleDataTypeHinted;
-use bss-php\dto\Tests\Support\SimpleDataTypeHintedRequired;
-use bss-php\dto\Tests\Support\SimpleDataTypeUnion;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Exceptions\InvalidDataException;
+use bssphp\dto\Tests\Support\SimpleData;
+use bssphp\dto\Tests\Support\SimpleDataNullable;
+use bssphp\dto\Tests\Support\SimpleDataNullableDefaultNull;
+use bssphp\dto\Tests\Support\SimpleDataNullableRequired;
+use bssphp\dto\Tests\Support\SimpleDataRequired;
+use bssphp\dto\Tests\Support\SimpleDataTypeHinted;
+use bssphp\dto\Tests\Support\SimpleDataTypeHintedRequired;
+use bssphp\dto\Tests\Support\SimpleDataTypeUnion;
 
 class ValuesTest extends TestCase
 {

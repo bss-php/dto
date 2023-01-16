@@ -1,16 +1,16 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\AbstractData;
-use bss-php\dto\Exceptions\InvalidDataException;
-use bss-php\dto\Tests\Support\Classes\TestAbstractClass;
-use bss-php\dto\Tests\Support\Classes\TestClass;
-use bss-php\dto\Tests\Support\Classes\TestClassExtendsAbstractClass;
-use bss-php\dto\Tests\Support\Classes\TestClassImplementsInterface;
-use bss-php\dto\Tests\Support\Classes\TestClassImplementsInterfaceExtends;
-use bss-php\dto\Tests\Support\Classes\TestClassOther;
-use bss-php\dto\Tests\Support\Classes\TestInterface;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Exceptions\InvalidDataException;
+use bssphp\dto\Tests\Support\Classes\TestAbstractClass;
+use bssphp\dto\Tests\Support\Classes\TestClass;
+use bssphp\dto\Tests\Support\Classes\TestClassExtendsAbstractClass;
+use bssphp\dto\Tests\Support\Classes\TestClassImplementsInterface;
+use bssphp\dto\Tests\Support\Classes\TestClassImplementsInterfaceExtends;
+use bssphp\dto\Tests\Support\Classes\TestClassOther;
+use bssphp\dto\Tests\Support\Classes\TestInterface;
 
 class ClassInheritanceTest extends TestCase
 {

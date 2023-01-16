@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace bss-php\dto;
+namespace bssphp\dto;
 
 use ReflectionException;
-use bss-php\dto\Exceptions\InvalidDataException;
-use bss-php\dto\Values\MissingValue;
+use bssphp\dto\Exceptions\InvalidDataException;
+use bssphp\dto\Values\MissingValue;
 
 final class Property
 {
@@ -27,7 +27,7 @@ final class Property
     private bool $hasDefaultValue;
 
     /**
-     * @var \bss-php\dto\Types\Type[]
+     * @var \bssphp\dto\Types\Type[]
      */
     public array $allowedTypes;
 
@@ -54,7 +54,7 @@ final class Property
      * Create a new class instance.
      *
      * @param \ReflectionProperty $reflectionProperty
-     * @param \bss-php\dto\AbstractData $data
+     * @param \bssphp\dto\AbstractData $data
      *
      * @return static
      */
@@ -67,9 +67,9 @@ final class Property
      * Collect all properties form a given class and optional instance.
      *
      * @param string $class
-     * @param \bss-php\dto\AbstractData|null $data
+     * @param \bssphp\dto\AbstractData|null $data
      *
-     * @return \bss-php\dto\Property[]
+     * @return \bssphp\dto\Property[]
      */
     public static function collect(string $class, ?AbstractData $data = null): array
     {
@@ -96,7 +96,7 @@ final class Property
      * Create an instance from a given data instance and property key.
      *
      * @param string $key
-     * @param \bss-php\dto\AbstractData $data
+     * @param \bssphp\dto\AbstractData $data
      *
      * @return $this
      */
@@ -106,9 +106,9 @@ final class Property
     }
 
     /**
-     * @param \bss-php\dto\AbstractData $data
+     * @param \bssphp\dto\AbstractData $data
      *
-     * @return \bss-php\dto\Property[]
+     * @return \bssphp\dto\Property[]
      */
     public static function collectFromInstance(AbstractData $data): array
     {
@@ -121,7 +121,7 @@ final class Property
     /**
      * @param string $class
      *
-     * @return \bss-php\dto\Property[]
+     * @return \bssphp\dto\Property[]
      */
     public static function collectFromClass(string $class): array
     {
@@ -145,7 +145,7 @@ final class Property
      *
      * @param mixed $value
      *
-     * @return \bss-php\dto\Exceptions\InvalidDataException|null
+     * @return \bssphp\dto\Exceptions\InvalidDataException|null
      */
     public function getError(mixed $value): ?InvalidDataException
     {
@@ -273,7 +273,7 @@ final class Property
      * Check if a property has been initialized with a value.
      * This also returns true if a property has been declared with a default value.
      *
-     * @param \bss-php\dto\AbstractData $data
+     * @param \bssphp\dto\AbstractData $data
      *
      * @return bool
      */
@@ -309,7 +309,7 @@ final class Property
     /**
      * Get all allowed types.
      *
-     * @return \bss-php\dto\Types\Type[]
+     * @return \bssphp\dto\Types\Type[]
      */
     private function checkAllowedTypes(): array
     {

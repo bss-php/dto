@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\dto\Interfaces;
+namespace bssphp\dto\Interfaces;
 
 interface AbstractDataInterface
 {

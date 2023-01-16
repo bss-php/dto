@@ -1,9 +1,9 @@
 # dto
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![Total Downloads](https://img.shields.io/packagist/dt/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![License](https://img.shields.io/packagist/l/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/bss-php/dto/Tests?style=flat-square)](https://github.com/bss-php/dto/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bssphp/dto.svg?style=flat-square)](https://packagist.org/packages/bssphp/dto)
+[![Total Downloads](https://img.shields.io/packagist/dt/bssphp/dto.svg?style=flat-square)](https://packagist.org/packages/bssphp/dto)
+[![License](https://img.shields.io/packagist/l/bssphp/dto.svg?style=flat-square)](https://packagist.org/packages/bssphp/dto)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/bssphp/dto/Tests?style=flat-square)](https://github.com/bssphp/dto/actions)
 
 A strongly typed **Data Transfer Object** without magic for PHP 8.0+ . Features support for PHP 8 [union types](https://wiki.php.net/rfc/union_types_v2) and [attributes](https://wiki.php.net/rfc/attributes_v2).
 
@@ -16,17 +16,17 @@ A strongly typed **Data Transfer Object** without magic for PHP 8.0+ . Features 
 ## Installation
 
 ```
-composer require bss-php/dto
+composer require bssphp/dto
 ```
 
-- For **PHP 7.4** please use [`1.x`](https://github.com/bss-php/dto/tree/1.x)
-- For **PHP 8.0** please use [`2.x`](https://github.com/bss-php/dto)
+- For **PHP 7.4** please use [`1.x`](https://github.com/bssphp/dto/tree/1.x)
+- For **PHP 8.0** please use [`2.x`](https://github.com/bssphp/dto)
 
 ## Usage
 
 ```php
-use bss-php\dto\AbstractData;
-use bss-php\dto\Attributes\Required;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Attributes\Required;
 
 class DummyData extends AbstractData
 {
@@ -53,8 +53,8 @@ $data = new DummyData([
 When declaring required properties, the dto will validate all parameters against the declared properties. Take a look at the [validation table](#validation) for more details.
 
 ```php
-use bss-php\dto\AbstractData;
-use bss-php\dto\Attributes\Required;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Attributes\Required;
 
 class DummyData extends AbstractData
 {
@@ -65,7 +65,7 @@ class DummyData extends AbstractData
 $data = new DummyData([]);
 ```
 
-> bss-php\dto\Exceptions\InvalidDataException: The required property \`name\` is missing
+> bssphp\dto\Exceptions\InvalidDataException: The required property \`name\` is missing
 
 ### Array methods
 
@@ -76,7 +76,7 @@ To get an array representation of the dto, simply call the `toArray` instance me
 When transferring the dto properties to an array format, the package will respect and call any `toArray` methods of nested dto instances or otherwise fall back to any declared [`jsonSerialize`](https://www.php.net/manual/de/jsonserializable.jsonserialize.php) method when implementing the [`JsonSerializable`](https://www.php.net/manual/de/class.jsonserializable.php) interface.
 
 ```php
-use bss-php\dto\AbstractData;
+use bssphp\dto\AbstractData;
 
 class DummyData extends AbstractData
 {
@@ -115,8 +115,8 @@ $data->toArray();
 The `toArrayConverted` method allows the simple conversion of property keys to a given case.
 
 ```php
-use bss-php\dto\AbstractData;
-use bss-php\dto\Cases;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Cases;
 
 class DummyData extends AbstractData
 {
@@ -139,8 +139,8 @@ When attaching the `Flexible` attribute you can provide more parameters than dec
 All properties will also be included in the `toArray` methods. This would otherwise throw an [`InvalidDataException`](src/Exceptions/InvalidDataException.php).
 
 ```php
-use bss-php\dto\AbstractData;
-use bss-php\dto\Attributes\Flexible;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Attributes\Flexible;
 
 #[Flexible]
 class DummyData extends AbstractData
@@ -198,6 +198,6 @@ $data->toArray(); // ['name' => 'Roman', 'website' => 'ich.wtf];
 
 ## Credits
 
-- [Roman Zipp](https://github.com/bss-php)
+- [Roman Zipp](https://github.com/bssphp)
 
 This package has been inspired by [Spaties Data-Transfer-Object](https://github.com/spatie/data-transfer-object) released under the [MIT License](https://github.com/spatie/data-transfer-object/blob/2.5.0/LICENSE.md).

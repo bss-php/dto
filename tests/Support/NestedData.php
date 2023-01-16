@@ -1,8 +1,8 @@
 <?php
 
-namespace bss-php\dto\Tests\Support;
+namespace bssphp\dto\Tests\Support;
 
-use bss-php\dto\AbstractData;
+use bssphp\dto\AbstractData;
 
 class NestedData extends AbstractData
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\Tests\Support\SimpleDataNullable;
+use bssphp\dto\Tests\Support\SimpleDataNullable;
 
 class SerializationTest extends TestCase
 {
@@ -12,6 +12,6 @@ class SerializationTest extends TestCase
             'foo' => 'bar',
         ]);
 
-        self::assertEquals('O:46:"bss-php\dto\Tests\Support\SimpleDataNullable":1:{s:3:"foo";s:3:"bar";}', serialize($data));
+        self::assertEquals('O:46:"bssphp\dto\Tests\Support\SimpleDataNullable":1:{s:3:"foo";s:3:"bar";}', serialize($data));
     }
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace bss-php\dto\Values;
+namespace bssphp\dto\Values;
 
 class MissingValue
 {

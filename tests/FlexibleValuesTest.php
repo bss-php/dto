@@ -1,11 +1,11 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\AbstractData;
-use bss-php\dto\Attributes\Flexible;
-use bss-php\dto\Exceptions\InvalidDataException;
-use bss-php\dto\Tests\Support\FlexibleData;
+use bssphp\dto\AbstractData;
+use bssphp\dto\Attributes\Flexible;
+use bssphp\dto\Exceptions\InvalidDataException;
+use bssphp\dto\Tests\Support\FlexibleData;
 
 class FlexibleValuesTest extends TestCase
 {

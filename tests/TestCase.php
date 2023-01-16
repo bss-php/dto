@@ -1,9 +1,9 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use bss-php\dto\Property;
+use bssphp\dto\Property;
 
 abstract class TestCase extends BaseTestCase
 {

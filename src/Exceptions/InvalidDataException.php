@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace bss-php\dto\Exceptions;
+namespace bssphp\dto\Exceptions;
 
-use bss-php\dto\Property;
+use bssphp\dto\Property;
 
 class InvalidDataException extends \InvalidArgumentException
 {
     /**
-     * @var \bss-php\dto\Property[]
+     * @var \bssphp\dto\Property[]
      */
     private array $properties = [];
 
     /**
-     * @param \bss-php\dto\Property $property
+     * @param \bssphp\dto\Property $property
      * @param mixed $value
      *
      * @return self
@@ -66,7 +66,7 @@ class InvalidDataException extends \InvalidArgumentException
     }
 
     /**
-     * @param \bss-php\dto\Exceptions\InvalidDataException[] $exceptions
+     * @param \bssphp\dto\Exceptions\InvalidDataException[] $exceptions
      *
      * @return self
      */
@@ -93,7 +93,7 @@ class InvalidDataException extends \InvalidArgumentException
     }
 
     /**
-     * @param \bss-php\dto\Property[] $properties
+     * @param \bssphp\dto\Property[] $properties
      *
      * @return void
      */
@@ -103,7 +103,7 @@ class InvalidDataException extends \InvalidArgumentException
     }
 
     /**
-     * @return \bss-php\dto\Property[]
+     * @return \bssphp\dto\Property[]
      */
     public function getProperties(): array
     {

@@ -1,8 +1,8 @@
 <?php
 
-return bss-php\Fixer\Config::make()
+return bssphp\Fixer\Config::make()
     ->in(__DIR__)
     ->preset(
-        new bss-php\Fixer\Presets\PrettyLaravel()
+        new bssphp\Fixer\Presets\PrettyLaravel()
     )
     ->out();

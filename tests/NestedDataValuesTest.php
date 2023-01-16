@@ -1,12 +1,12 @@
 <?php
 
-namespace bss-php\dto\Tests;
+namespace bssphp\dto\Tests;
 
-use bss-php\dto\Cases\CamelCase;
-use bss-php\dto\Cases\KebabCase;
-use bss-php\dto\Cases\PascalCase;
-use bss-php\dto\Cases\SnakeCase;
-use bss-php\dto\Tests\Support\NestedData;
+use bssphp\dto\Cases\CamelCase;
+use bssphp\dto\Cases\KebabCase;
+use bssphp\dto\Cases\PascalCase;
+use bssphp\dto\Cases\SnakeCase;
+use bssphp\dto\Tests\Support\NestedData;
 
 class NestedDataValuesTest extends TestCase
 {
