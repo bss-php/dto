@@ -18,7 +18,7 @@
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^0.12.99|^1.0",
         "phpunit/phpunit": "^9.0",
-        "bss-php/php-cs-fixer-config": "^3.0",
+        "bss-php/php-cs-fixer-config": "^1.2",
         "symfony/var-dumper": "^5.1"
     },
     "autoload": {
