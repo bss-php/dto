@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\DTO\Attributes;
+namespace bss-php\dto\Attributes;
 
 use Attribute;
 

@@ -1,25 +1,25 @@
 <?php
 
-namespace bss-php\DTO\Tests;
+namespace bss-php\dto\Tests;
 
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Attributes\Required;
-use bss-php\DTO\Exceptions\InvalidDataException;
-use bss-php\DTO\Exceptions\InvalidDeclarationException;
-use bss-php\DTO\Property;
-use bss-php\DTO\Tests\Support\SimpleData;
-use bss-php\DTO\Tests\Support\SimpleDataNullable;
-use bss-php\DTO\Tests\Support\SimpleDataNullableDefaultNull;
-use bss-php\DTO\Tests\Support\SimpleDataNullableDefaultNullRequired;
-use bss-php\DTO\Tests\Support\SimpleDataNullableRequired;
-use bss-php\DTO\Tests\Support\SimpleDataRequired;
-use bss-php\DTO\Tests\Support\SimpleDataTypeHinted;
-use bss-php\DTO\Tests\Support\SimpleDataTypeHintedRequired;
-use bss-php\DTO\Tests\Support\SimpleDataTypeUnion;
-use bss-php\DTO\Tests\Support\SimpleDataTypeUnionNullable;
-use bss-php\DTO\Tests\Support\SimpleDataTypeUnionNullableRequired;
-use bss-php\DTO\Tests\Support\SimpleDataTypeUnionRequired;
-use bss-php\DTO\Values\MissingValue;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Attributes\Required;
+use bss-php\dto\Exceptions\InvalidDataException;
+use bss-php\dto\Exceptions\InvalidDeclarationException;
+use bss-php\dto\Property;
+use bss-php\dto\Tests\Support\SimpleData;
+use bss-php\dto\Tests\Support\SimpleDataNullable;
+use bss-php\dto\Tests\Support\SimpleDataNullableDefaultNull;
+use bss-php\dto\Tests\Support\SimpleDataNullableDefaultNullRequired;
+use bss-php\dto\Tests\Support\SimpleDataNullableRequired;
+use bss-php\dto\Tests\Support\SimpleDataRequired;
+use bss-php\dto\Tests\Support\SimpleDataTypeHinted;
+use bss-php\dto\Tests\Support\SimpleDataTypeHintedRequired;
+use bss-php\dto\Tests\Support\SimpleDataTypeUnion;
+use bss-php\dto\Tests\Support\SimpleDataTypeUnionNullable;
+use bss-php\dto\Tests\Support\SimpleDataTypeUnionNullableRequired;
+use bss-php\dto\Tests\Support\SimpleDataTypeUnionRequired;
+use bss-php\dto\Values\MissingValue;
 
 class ValidationTest extends TestCase
 {

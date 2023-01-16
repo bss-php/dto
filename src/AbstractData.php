@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace bss-php\DTO;
+namespace bss-php\dto;
 
-use bss-php\DTO\Attributes\Flexible;
-use bss-php\DTO\Cases\AbstractCase;
-use bss-php\DTO\Cases\SnakeCase;
-use bss-php\DTO\Exceptions\InvalidDataException;
-use bss-php\DTO\Exceptions\InvalidDeclarationException;
-use bss-php\DTO\Interfaces\AbstractDataInterface;
-use bss-php\DTO\Values\MissingValue;
+use bss-php\dto\Attributes\Flexible;
+use bss-php\dto\Cases\AbstractCase;
+use bss-php\dto\Cases\SnakeCase;
+use bss-php\dto\Exceptions\InvalidDataException;
+use bss-php\dto\Exceptions\InvalidDeclarationException;
+use bss-php\dto\Interfaces\AbstractDataInterface;
+use bss-php\dto\Values\MissingValue;
 
 abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
 {
@@ -95,7 +95,7 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
      *
      * @param string $key
      *
-     * @return \bss-php\DTO\Property
+     * @return \bss-php\dto\Property
      */
     private function getProperty(string $key): Property
     {
@@ -171,14 +171,14 @@ abstract class AbstractData implements AbstractDataInterface, \JsonSerializable
             throw new \InvalidArgumentException("The given case formatter `{$case}` is invalid");
         }
 
-        /** @var \bss-php\DTO\Cases\AbstractCase $caseFormatter */
+        /** @var \bss-php\dto\Cases\AbstractCase $caseFormatter */
         $caseFormatter = new $case($values);
 
         return $caseFormatter->format();
     }
 
     /**
-     * Iterate over instance values with a given callback applied to DTO instances.
+     * Iterate over instance values with a given callback applied to dto instances.
      *
      * @param \Closure $callback
      *

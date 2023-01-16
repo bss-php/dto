@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace bss-php\DTO\Types;
+namespace bss-php\dto\Types;
 
 class NotNullType implements Type
 {

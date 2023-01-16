@@ -1,9 +1,9 @@
-# DTO
+# dto
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/bss-php/DTO.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![Total Downloads](https://img.shields.io/packagist/dt/bss-php/DTO.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![License](https://img.shields.io/packagist/l/bss-php/DTO.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/bss-php/DTO/Tests?style=flat-square)](https://github.com/bss-php/DTO/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
+[![Total Downloads](https://img.shields.io/packagist/dt/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
+[![License](https://img.shields.io/packagist/l/bss-php/dto.svg?style=flat-square)](https://packagist.org/packages/bss-php/dto)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/bss-php/dto/Tests?style=flat-square)](https://github.com/bss-php/dto/actions)
 
 A strongly typed **Data Transfer Object** without magic for PHP 8.0+ . Features support for PHP 8 [union types](https://wiki.php.net/rfc/union_types_v2) and [attributes](https://wiki.php.net/rfc/attributes_v2).
 
@@ -19,14 +19,14 @@ A strongly typed **Data Transfer Object** without magic for PHP 8.0+ . Features 
 composer require bss-php/dto
 ```
 
-- For **PHP 7.4** please use [`1.x`](https://github.com/bss-php/DTO/tree/1.x)
-- For **PHP 8.0** please use [`2.x`](https://github.com/bss-php/DTO)
+- For **PHP 7.4** please use [`1.x`](https://github.com/bss-php/dto/tree/1.x)
+- For **PHP 8.0** please use [`2.x`](https://github.com/bss-php/dto)
 
 ## Usage
 
 ```php
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Attributes\Required;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Attributes\Required;
 
 class DummyData extends AbstractData
 {
@@ -50,11 +50,11 @@ $data = new DummyData([
 
 ### Require properties
 
-When declaring required properties, the DTO will validate all parameters against the declared properties. Take a look at the [validation table](#validation) for more details.
+When declaring required properties, the dto will validate all parameters against the declared properties. Take a look at the [validation table](#validation) for more details.
 
 ```php
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Attributes\Required;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Attributes\Required;
 
 class DummyData extends AbstractData
 {
@@ -65,18 +65,18 @@ class DummyData extends AbstractData
 $data = new DummyData([]);
 ```
 
-> bss-php\DTO\Exceptions\InvalidDataException: The required property \`name\` is missing
+> bss-php\dto\Exceptions\InvalidDataException: The required property \`name\` is missing
 
 ### Array methods
 
 #### Simple array representation
 
-To get an array representation of the DTO, simply call the `toArray` instance method.
+To get an array representation of the dto, simply call the `toArray` instance method.
 
-When transferring the DTO properties to an array format, the package will respect and call any `toArray` methods of nested DTO instances or otherwise fall back to any declared [`jsonSerialize`](https://www.php.net/manual/de/jsonserializable.jsonserialize.php) method when implementing the [`JsonSerializable`](https://www.php.net/manual/de/class.jsonserializable.php) interface.
+When transferring the dto properties to an array format, the package will respect and call any `toArray` methods of nested dto instances or otherwise fall back to any declared [`jsonSerialize`](https://www.php.net/manual/de/jsonserializable.jsonserialize.php) method when implementing the [`JsonSerializable`](https://www.php.net/manual/de/class.jsonserializable.php) interface.
 
 ```php
-use bss-php\DTO\AbstractData;
+use bss-php\dto\AbstractData;
 
 class DummyData extends AbstractData
 {
@@ -115,8 +115,8 @@ $data->toArray();
 The `toArrayConverted` method allows the simple conversion of property keys to a given case.
 
 ```php
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Cases;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Cases;
 
 class DummyData extends AbstractData
 {
@@ -133,14 +133,14 @@ $data->toArrayConverted(Cases\PascalCase::class); // ['FirstName' => 'Roman'];
 $data->toArrayConverted(Cases\SnakeCase::class);  // ['first_name' => 'Roman'];
 ```
 
-### Flexible DTOs
+### Flexible dtos
 
-When attaching the `Flexible` attribute you can provide more parameters than declared in the DTO instance.
+When attaching the `Flexible` attribute you can provide more parameters than declared in the dto instance.
 All properties will also be included in the `toArray` methods. This would otherwise throw an [`InvalidDataException`](src/Exceptions/InvalidDataException.php).
 
 ```php
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Attributes\Flexible;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Attributes\Flexible;
 
 #[Flexible]
 class DummyData extends AbstractData

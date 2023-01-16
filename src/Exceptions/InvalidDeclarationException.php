@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace bss-php\DTO\Exceptions;
+namespace bss-php\dto\Exceptions;
 
-use bss-php\DTO\Property;
+use bss-php\dto\Property;
 
 class InvalidDeclarationException extends \RuntimeException
 {

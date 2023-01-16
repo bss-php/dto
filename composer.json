@@ -6,8 +6,8 @@
     "authors": [
         {
             "name": "bss-php",
-            "email": "ich@ich.wtf",
-            "homepage": "https://ich.wtf"
+            "email": "beanstack.systems@gmail.com",
+            "homepage": "http://beanstack.in/"
         }
     ],
     "require": {
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "bss-php\\DTO\\": "src"
+            "bss-php\\dto\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "bss-php\\DTO\\Tests\\": "tests"
+            "bss-php\\dto\\Tests\\": "tests"
         }
     },
     "scripts": {

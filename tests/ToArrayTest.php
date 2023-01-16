@@ -1,13 +1,13 @@
 <?php
 
-namespace bss-php\DTO\Tests;
+namespace bss-php\dto\Tests;
 
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Attributes\Flexible;
-use bss-php\DTO\Cases\CamelCase;
-use bss-php\DTO\Cases\KebabCase;
-use bss-php\DTO\Cases\PascalCase;
-use bss-php\DTO\Cases\SnakeCase;
+use bss-php\dto\AbstractData;
+use bss-php\dto\Attributes\Flexible;
+use bss-php\dto\Cases\CamelCase;
+use bss-php\dto\Cases\KebabCase;
+use bss-php\dto\Cases\PascalCase;
+use bss-php\dto\Cases\SnakeCase;
 
 class ToArrayTest extends TestCase
 {
@@ -142,7 +142,7 @@ class ToArrayTest extends TestCase
     public function testConvertedInvalidClassName()
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('The given case formatter `bss-php\DTO\Tests\ToArrayTest` is invalid');
+        $this->expectExceptionMessage('The given case formatter `bss-php\dto\Tests\ToArrayTest` is invalid');
 
         $data = new class() extends AbstractData {
             public string $firstProperty = '1';

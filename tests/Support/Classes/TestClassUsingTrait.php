@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\DTO\Tests\Support\Classes;
+namespace bss-php\dto\Tests\Support\Classes;
 
 class TestClassUsingTrait
 {

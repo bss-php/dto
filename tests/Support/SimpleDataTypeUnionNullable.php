@@ -1,8 +1,8 @@
 <?php
 
-namespace bss-php\DTO\Tests\Support;
+namespace bss-php\dto\Tests\Support;
 
-use bss-php\DTO\AbstractData;
+use bss-php\dto\AbstractData;
 
 class SimpleDataTypeUnionNullable extends AbstractData
 {
